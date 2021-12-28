@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Bryce, Brady, and Jack's React Application
-        </p>
-        <a
-          className="App-link"
-          href="https://github.com/jacklemasters/toDoApp"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Repository
-        </a>
-      </header>
-    </div>
-  );
+import React, { Component } from 'react'
+import './App.css'
+import TodoList from './ToDoList'
+class App extends Component {
+  constructor() {
+    super()
+    this.state = {
+      items: [],
+      currentItem: {text:'', key:''},
+    }
+  }
+  handleInput = e => {
+    console.log('Hello Input')
+  }
+  addItem = () => {
+    console.log('Hello Add Item')
+  }
+  render() {
+    return (
+      <div className="App">
+        <TodoList addItem={this.addItem} />
+      </div>
+    )
+  }
 }
-
-export default App;
+export default App
