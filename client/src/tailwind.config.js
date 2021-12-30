@@ -1,5 +1,5 @@
 module.exports = {
-    content: ["React\stohlerProject\stohler\client\src\App.js"],
+  content: ["./src/**/*.{html,js}"],
     theme: {
       extend: {},
     },
