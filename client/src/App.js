@@ -1,7 +1,6 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
 
-<<<<<<< Updated upstream
+
 function App() {
   return (
     <div className="App">
@@ -21,7 +20,7 @@ function App() {
       </header>
     </div>
   );
-=======
+
 import TodoList from './ToDoList'
 import TodoItems from './TodoItems'
 
@@ -77,7 +76,7 @@ class App extends Component {
       </div>
     )
   }
->>>>>>> Stashed changes
+
 }
 
-export default App;
+export default App
