@@ -7,11 +7,17 @@ class TodoList extends Component {
     render() {
     return (
         <div className="todoListMain">
-        <div className="text-3xl font-bold underline">Test</div>  
+        <nav className="flex bg-sky-700 mb-8"> 
+            <ul className="flex flex-grid m-4 font-bold text-lg">
+                <h1 className="pr-96">React toDo App</h1>
+                <li className="pr-12 pl-96"><a href="#home">Home</a></li>
+                <li className="pr-12"><a href="#Login">Login</a></li>
+            </ul>
+        </nav>  
         <div className="flex flex-row">
             <form onSubmit={this.props.addItem}>
             <input
-                className="p-4 border-2 border-sky-500 w-48 text-base h-14"
+                className="p-4 border-2 border-sky-500 w-48 text-base h-14 mb-4"
                 placeholder="Task"
                 ref={this.props.inputElement}
                 value={this.props.currentItem.text}

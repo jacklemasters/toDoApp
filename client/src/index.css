@@ -75,11 +75,8 @@ ul.theList {
   cursor: pointer;
 }
 
- ul.theList li:hover{
+ul.theList li:hover{
 	background-color: red;
 	color: #ffffff;
 	cursor: pointer;
 }
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
