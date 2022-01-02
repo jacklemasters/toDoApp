@@ -17,7 +17,7 @@ const main = async () => {
     const app = (0, express_1.default)();
     const apolloServer = new apollo_server_express_1.ApolloServer({
         schema: await (0, type_graphql_1.buildSchema)({
-            resolvers: [user_1.UserResolver, post_1.PostResolver],
+            resolvers: [post_1.PostResolver, user_1.UserResolver],
             validate: false
         }),
         context: () => ({ em: orm.em })
