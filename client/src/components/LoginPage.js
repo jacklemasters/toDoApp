@@ -29,7 +29,7 @@ export default class LoginPage extends Component {
                 </div>
                 <input
                     type="password"
-                    class="flex-shrink flex-grow leading-normal w-px flex-1 border-0 h-10 px-3 relative self-center font-roboto text-xl outline-none"
+                    class="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border-0 h-10 px-3 relative self-center font-roboto text-xl outline-none"
                     placeholder="Password"/>
                 <div class="flex -mr-px">
                     <span

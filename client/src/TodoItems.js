@@ -12,7 +12,7 @@ class TodoItems extends Component {
     const todoEntries = this.props.entries
     const listItems = todoEntries.map(this.createTasks)
 
-    return <ul className="theList font-bold text-black rounded p-4 mb-4">{listItems}</ul>
+    return <ul className="theList font-bold text-black rounded p-4  mb-4 self-center sm:w-48 md:w-64 lg:w-72">{listItems}</ul>
     }
 }
 
