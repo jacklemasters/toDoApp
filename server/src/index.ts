@@ -33,7 +33,7 @@ const main = async () => {
             cookie: {
                 maxAge: 1000 * 60 * 60 * 24 * 365 * 10, // 10 years
                 httpOnly: true,
-                sameSite: "lax", //csrf
+                sameSite: "Lax", //csrf
                 secure: __prod__
             },
             saveUninitialized: false,
@@ -49,13 +49,10 @@ const main = async () => {
         }),
         context: ({req, res}): MyContext => ( {em: orm.em, req, res} ),
     });
-    const cors = {
-        credentials: true,
-        origin: 'https://studio.apollographql.com'
-    };
+    
 
     await apolloServer.start();
-    apolloServer.applyMiddleware({app, cors});
+    apolloServer.applyMiddleware({app});
 
     app.listen(4000, () => {
         console.log('server started on port 4000')
