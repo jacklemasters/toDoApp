@@ -7,7 +7,7 @@ export default class LoginPage extends Component {
         <div class="flex-col flex ml-auto mr-auto items-center w-full lg:w-2/3 md:w-3/5">
         <h1 class="font-bold text-2xl my-10 text-white"> Login </h1>
     <form action="" class="mt-2 flex flex-col lg:w-1/2 w-8/12">
-                <div class="flex flex-wrap w-full mb-4 relative h-15 bg-white items-center rounded mb-6 pr-10">
+                <div class="flex flex-wrap w-full relative h-15 bg-white items-center rounded mb-6 pr-10">
                 <div class="flex -mr-px justify-center w-15 p-4">
                     <span
                     class="flex items-center leading-normal bg-white px-3 border-0 rounded rounded-r-none text-2xl text-gray-600"
@@ -29,7 +29,7 @@ export default class LoginPage extends Component {
                 </div>
                 <input
                     type="password"
-                    class="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border-0 h-10 px-3 relative self-center font-roboto text-xl outline-none"
+                    class="flex-shrink flex-grow flex-auto leading-normal w-px border-0 h-10 px-3 relative self-center font-roboto text-xl outline-none"
                     placeholder="Password"/>
                 <div class="flex -mr-px">
                     <span
@@ -51,4 +51,4 @@ export default class LoginPage extends Component {
     }
 }
 
-export default LoginPage
+/* export default LoginPage */
