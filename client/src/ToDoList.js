@@ -19,13 +19,13 @@ class TodoList extends Component {
         <div className="flex flex-row mb-4 sm:w-1/2 md:w-full lg:w-1/4">
             <form onSubmit={this.props.addItem}>
             <input
-                className="p-4 border-2 border-sky-500 w-80 text-base h-14 "
+                className="p-4 mr-2 border-2 border-sky-500 w-80 text-base h-14 rounded-lg"
                 placeholder="Task"
                 ref={this.props.inputElement}
                 value={this.props.currentItem.text}
                 onChange={this.props.handleInput}
             />
-            <button className="p-2 border-2 border-red-700 bg-red-500 w-24 h-14" type="submit"> Add Task </button>
+            <button className="p-2 border-2 border-red-700 bg-red-500 w-24 h-14 rounded-lg" type="submit"> Add Task </button>
             </form>
         </div>
         </div>
