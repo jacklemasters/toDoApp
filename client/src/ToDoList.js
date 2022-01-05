@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import { BrowserRouter, Route, Link } from "react-router-dom";
 
 class TodoList extends Component {
     componentDidUpdate() {
@@ -7,12 +7,13 @@ class TodoList extends Component {
     }
     render() {
     return (
+        <BrowserRouter>
         <div className="todoListMain">
         <nav className="flex bg-sky-700 mb-8"> 
             <ul className="flex flex-grid m-4 font-bold text-lg">
                 <h1 className="pr-96">React toDo App</h1>
                 <li className="pr-12 pl-96"><a href="#home">Home</a></li>
-                <li className="pr-12"><a href="">Login</a></li>
+                <Link to="LoginPage" className="pr-12">Login</Link>
             </ul>
         </nav>  
         <div className="flex flex-row mb-4 sm:w-1/2 md:w-full lg:w-1/4">
@@ -28,6 +29,7 @@ class TodoList extends Component {
             </form>
         </div>
         </div>
+        </BrowserRouter>
     )
     }
 }
