@@ -18,7 +18,7 @@ export default class LoginPage extends Component {
                 <input
                     type="text"
                     class="flex-shrink flex-grow leading-normal w-px flex-1 border-0 h-10 border-grey-light rounded rounded-l-none px-3 self-center relative  font-roboto text-xl outline-none"
-                    placeholder="Username"/>
+                    placeholder="Enter Username"/>
                 </div>
                 <div class="flex flex-wrap w-full relative h-15 bg-white items-center rounded mb-4">
                 <div class="flex -mr-px justify-center w-15 p-4">
@@ -30,7 +30,7 @@ export default class LoginPage extends Component {
                 <input
                     type="password"
                     class="flex-shrink flex-grow flex-auto leading-normal w-px border-0 h-10 px-3 relative self-center font-roboto text-xl outline-none"
-                    placeholder="Password"/>
+                    placeholder="Enter Password"/>
                 <div class="flex -mr-px">
                     <span
                     class="flex items-center leading-normal bg-white rounded rounded-l-none border-0 px-3 whitespace-no-wrap text-gray-600">
