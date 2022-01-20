@@ -20,7 +20,7 @@ class TodoList extends Component {
             <form onSubmit={this.props.addItem}>
             <input
                 className="p-4 mr-2 border-2 border-sky-500 w-80 text-base h-14 rounded-lg"
-                placeholder="Task"
+                placeholder="Enter Task"
                 ref={this.props.inputElement}
                 value={this.props.currentItem.text}
                 onChange={this.props.handleInput}
